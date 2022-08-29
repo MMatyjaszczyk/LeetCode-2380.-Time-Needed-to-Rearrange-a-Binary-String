@@ -87,7 +87,7 @@ Now the easu part. Algorith will go something like: \
 - Set a number of *waits* for the first `1` to 0.
 - *DP:* Using the equation *max(w + 1 - z, 0)*, iterate through the array and calculate the number of *waits* for the last `1`.
 - The answer will be the the index of the last `1` minus the number of `1`s in our substring 's' plus number of *waits* of the last `1`.
-THE END :> \
+THE END :>
 **C++**
 ```
 class Solution {
