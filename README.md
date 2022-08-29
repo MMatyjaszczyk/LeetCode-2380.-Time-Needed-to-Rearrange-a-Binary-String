@@ -57,9 +57,12 @@ class Solution:
             iterations += 1
         return iterations - 1
 ```
-**Complexity**
+**Complexity Analisys**
+- Time Complexity: **O(n^2)**
+
 Every iteration we go through the string. That gives us time complexity of `O(n*iter)`, where `n` is a length of string and `iter` is number of iterations (answere). We will see later on, that the number of iterations is never greater than `2n`, so time complexity is `O(n^2)`.
-Space complexity is just `O(1)`.
+
+Space complexity: **O(1)**.
 
 # DP
 
@@ -112,8 +115,13 @@ class Solution:
         
 ```
 **Complexity**
+- Time Complexity:*O(n)*
+
 We take a substring and then iterate through it. Time complexity is *O(n)*, where n is length of the string.
-Space complexity is also *O(n)*, because we could have at max an array of the length `n-1`.
+
+- Space complexity: *O(n)*
+
+*O(n)*, because we could have at max an array of the length `n-1`.
 [Extra: it could be done in constant space]
 
 # DP - constant extra space
